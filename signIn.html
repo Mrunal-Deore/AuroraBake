@@ -1,0 +1,115 @@
+<!--Signup page and form-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+      .signup-container {
+        width: 550px;
+        background-color: aliceblue;
+        padding: 20px;
+        margin-left: 400px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 6px;
+      }
+
+      input {
+        background-color: rgb(252, 252, 243);
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>
+        <i><a href="#">AuroraBake</a></i>
+      </h1>
+      <ul>
+        <li><a href="#home"> Home </a></li>
+        <li><a href="#aboutUs"> About Us </a></li>
+        <li><a href="#menu"> Products </a></li>
+        <li><a href="#contact"> Contact Us </a></li>
+        <li><a href="signIn.html"> Sign In </a></li>
+      </ul>
+    </nav>
+
+    <main id="main">
+      <div class="container">
+        <section id="services" class="services">
+          <div class="signup-container">
+            <h2>Create an Account</h2>
+            <form action="signUp.php" method="post" id="signup-form">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="passwords">Password:</label>
+              <input type="password" id="passwords" name="passwords" required />
+
+              <label for="confirm-password">Confirm Password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+              />
+              <br />
+              <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login2.html">Log In</a></p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Bakery Shop. All rights reserved.</p>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
